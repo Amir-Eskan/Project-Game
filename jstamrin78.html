@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+       body{
+      background: 
+    radial-gradient(ellipse at 50% 40%, #38206d 0%, transparent 55%),
+    linear-gradient(135deg, #080b2b, #111936, #1b1045);
+       }
+       .hed{
+        >h1{
+            text-align: center;
+            color: white;
+        }
+        >p{
+            text-align: center;
+                 color: white;
+                 font-size: 22px;
+        }
+       }
+       .contaner1{
+        width: 1200px;
+        margin:50px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >.left-hed{
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.35);
+border: 1px solid #60A5FA;
+            display: flex;
+            width: 220px;
+            height: 110px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            >i{
+                font-size: 22px;
+                color:blue;
+                background: rgba(19, 27, 185, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(119, 115, 176, 0.3);
+box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+padding: 10px;
+border-radius: 50%;
+color: white;
+            }
+            >p{
+               color: white;
+                font-size: 21px;
+            }
+            #p1{
+                background: rgba(30, 58, 138, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(96, 165, 250, 0.3);
+box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+padding: 5px 10px;
+border-radius: 50%;
+color: white;
+            }
+        }
+        .right-hed{
+         box-shadow: 0 0 20px rgba(192, 132, 252, 0.35);
+border: 1px solid #C084FC;
+            display: flex;
+            width: 220px;
+            height: 110px;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+            >i{
+                font-size: 22px;
+                color:#4b2c82;
+                background: rgba(88, 28, 135, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(192, 132, 252, 0.3);
+box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+padding: 10px;
+border-radius: 50%;
+color: white;
+            }
+             >p{
+               color: white;
+                font-size: 21px;
+            }
+            #p2{
+                 background: rgba(30, 58, 138, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(96, 165, 250, 0.3);
+box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+padding: 5px 10px;
+border-radius: 50%;
+color: white; 
+            }
+        }
+       }
+       .contaner2{
+        width: 1200px;
+        margin:150px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >.ro{
+         
+            >button{
+                padding:35px  ;
+             transition: .5s ease;
+                border-radius: 50%;
+                   border: 10px solid #6518b3;
+            }
+i{
+     font-size: 40px;
+    color: #7C3AED;
+filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.8))
+        drop-shadow(0 0 20px rgba(76, 29, 149, 0.6));
+
+}
+
+
+>p{
+    font-size: 22px;
+    color: white;
+text-align: center;
+}
+        }
+
+        .pa{
+>button{
+   padding:35px ;
+  border: 10px solid #60A5FA;          
+border-radius: 50%; 
+transition: .5s ease;
+}
+i{
+    font-size: 40px;
+    background: rgba(59, 130, 246, 0.2);
+color: #60A5FA;
+box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+border-radius: 20px;
+backdrop-filter: blur(12px);
+}
+>p{
+    color: white;
+    font-size: 22px;
+  text-align: center;
+}
+
+}
+
+.sc{
+ >button{
+   padding:35px ;
+  transition: .5s ease;          
+border-radius: 50%; 
+border: 10px solid #ec3b3b;
+} 
+ i{
+    font-size: 40px;
+color:rgba(255, 0, 0, 0.721);
+background: rgba(239, 68, 68, 0.18);
+
+box-shadow: 0 0 15px rgba(239, 68, 68, 0.45),
+            0 0 25px rgba(185, 28, 28, 0.25);
+border-radius: 20px;
+backdrop-filter: blur(12px);
+ }   
+ >p{
+color: white;
+    font-size: 22px;
+  text-align: center;
+ }
+
+}
+
+
+       }
+      .ro button:hover {
+    box-shadow: 0 0 30px #A855F7;
+        transform: translateY(-8px) scale(1.06);
+}
+
+.pa button:hover {
+    box-shadow: 0 0 30px #60A5FA;
+        transform: translateY(-8px) scale(1.06);
+}
+
+.sc button:hover {
+    box-shadow: 0 0 30px #EF4444;
+        transform: translateY(-8px) scale(1.06);
+}
+       .kool{
+      width: 600px;
+margin: auto;
+  background: linear-gradient(145deg, #172554, #312e81, #1e1b4b);
+display: none;
+    border: 1px solid rgba(139, 92, 246, 0.5);
+    border-radius: 24px;
+
+    box-shadow:
+        0 0 15px rgba(99, 102, 241, 0.35),
+        0 0 40px rgba(139, 92, 246, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.04);
+            position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+   
+
+>h1{
+    text-align: center;
+    color: aqua;
+    >i{
+        color: yellow;
+        padding: 0px 10px;
+    }
+}
+>button{
+   position: relative;
+   right: 30%;
+   left: 30%;
+   font-size: 30px;
+   padding: 0px 30px;
+   border-radius: 8px;
+   color: white;
+    background: linear-gradient(145deg, #2148ca, #312e81, #1e1b4b);
+   transition: .7s ease;
+}
+
+
+       }
+      .contaner3{
+
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        >.left{
+ 
+
+>i{
+    font-size: 30px;
+                color:#4b2c82;
+                background: rgba(88, 28, 135, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(192, 132, 252, 0.3);
+box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+padding: 10px;
+border-radius: 50%;
+color: white;
+}
+>h3{
+    color: white;
+}
+>span{
+font-size: 40px;
+    color: #7C3AED;
+filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.8))
+        drop-shadow(0 0 20px rgba(76, 29, 149, 0.6));
+
+}
+>p{
+ color: #7C3AED;
+    font-size: 25px;
+}
+        }
+
+        .right{
+        >i{
+    font-size: 30px;
+               color:blue;
+                background: rgba(19, 27, 185, 0.35);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(192, 132, 252, 0.3);
+box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+padding: 10px;
+border-radius: 50%;
+color: white;
+}    
+>h3{
+    color: white;
+}
+>span{
+    background: rgba(59, 130, 246, 0.2);
+color: #60A5FA;
+box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+border-radius: 20px;
+backdrop-filter: blur(12px);
+font-size: 40px;
+   
+    
+}
+
+>p{
+    color: #60A5FA;
+   
+    font-size: 25px;
+}
+
+        }
+      }
+       .kool button:hover{
+      
+        background: linear-gradient(135deg, #ffffff, #dbeafe);
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.4);
+    transform: translateY(-3px);
+    color: #2148ca;
+       }
+.kool::before {
+    content: '';
+    position: fixed;
+    inset: -100vh -100vw;
+    background: rgba(5, 10, 30, 0.75);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+.game {
+    display: none;
+   
+  }
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.start {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 50px 64px;
+    text-align: center;
+    border-radius: 28px;
+    overflow: hidden;
+margin: 100px auto;
+  
+    background:
+        radial-gradient(rgba(148, 163, 184, .07) 1px, transparent 1px),
+        linear-gradient(145deg, rgba(15, 23, 42, .9), rgba(30, 27, 75, .8));
+    background-size: 22px 22px, cover;
+
+    border: 1px solid rgba(148, 163, 184, .15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(2, 6, 23, .65),
+        0 0 80px rgba(99, 102, 241, .18),
+        inset 0 1px 0 rgba(255, 255, 255, .08);
+
+    animation:
+        cardIn   .9s cubic-bezier(.22, 1, .36, 1) both,
+        cardFloat 6s ease-in-out 1.2s infinite;
+}
+
+
+.start::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, transparent, #60a5fa, #a855f7, transparent);
+    box-shadow: 0 0 12px rgba(96, 165, 250, .9);
+    animation: lineGlow 3s ease-in-out infinite;
+}
+
+
+.start::after {
+    content: '';
+    position: absolute;
+    inset: -40%;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 30% 20%, rgba(96, 165, 250, .16), transparent 45%),
+        radial-gradient(circle at 75% 85%, rgba(168, 85, 247, .18), transparent 45%);
+    animation: blobMove 8s ease-in-out infinite alternate;
+}
+
+
+.start img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+  
+    border: 4px solid transparent;
+    background:
+        linear-gradient(#0b1026, #0b1026) padding-box,
+        conic-gradient(from var(--angle), #38bdf8, #a855f7, #60a5fa, #38bdf8) border-box;
+
+    box-shadow:
+        0 0 30px rgba(96, 165, 250, .35),
+        0 0 70px rgba(168, 85, 247, .25);
+
+    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1);
+
+    animation:
+        imgIn      .9s cubic-bezier(.22, 1, .36, 1) .15s backwards,
+        spinAngle  6s linear infinite,
+        imgGlow    3.5s ease-in-out 1s infinite;
+}
+
+.start img:hover {
+    transform: scale(1.07) rotate(3deg);
+}
+
+#start {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+
+    padding: 18px 48px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 55%, #a855f7 100%);
+    background-size: 180% 180%;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, .35),
+        inset 0 1px 0 rgba(255, 255, 255, .25);
+
+    transition:
+        transform .35s cubic-bezier(.34, 1.56, .64, 1),
+        box-shadow .35s ease,
+        background-position .6s ease;
+
+    animation:
+        btnIn   .9s cubic-bezier(.22, 1, .36, 1) .3s backwards,
+        btnGlow 3s ease-in-out 1.4s infinite;
+}
+
+
+#start::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.5s ease-in-out 1.6s infinite;
+}
+
+#start i {
+    display: inline-block;
+    font-size: 1.35rem;
+    animation: gamepad 2.2s ease-in-out infinite;
+}
+
+#start:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-position: 100% 50%;
+    box-shadow:
+        0 16px 45px rgba(37, 99, 235, .5),
+        0 0 55px rgba(168, 85, 247, .55),
+        inset 0 1px 0 rgba(255, 255, 255, .3);
+}
+
+#start:active {
+    transform: translateY(0) scale(.95);
+    transition-duration: .1s;
+}
+
+#start:focus-visible {
+    outline: 2px solid #a855f7;
+    outline-offset: 4px;
+}
+
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(45px) scale(.94); }
+    to   { opacity: 1; transform: none; }
+}
+
+@keyframes cardFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+}
+
+@keyframes imgIn {
+    from { opacity: 0; transform: scale(.6) rotate(-15deg); }
+    to   { opacity: 1; transform: none; }
+}
+
+@keyframes spinAngle {
+    to { --angle: 360deg; }
+}
+
+@keyframes imgGlow {
+    0%, 100% { box-shadow: 0 0 30px rgba(96, 165, 250, .35), 0 0 70px rgba(168, 85, 247, .25); }
+    50%      { box-shadow: 0 0 45px rgba(96, 165, 250, .65), 0 0 100px rgba(168, 85, 247, .45); }
+}
+
+@keyframes btnIn {
+    from { opacity: 0; transform: translateY(30px) scale(.9); }
+    to   { opacity: 1; transform: none; }
+}
+
+@keyframes btnGlow {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(124, 58, 237, .4)); }
+    50%      { filter: drop-shadow(0 0 28px rgba(168, 85, 247, .8)); }
+}
+
+@keyframes shine {
+    0%        { left: -80%; }
+    60%, 100% { left: 130%; }
+}
+
+@keyframes gamepad {
+    0%, 100% { transform: rotate(0) scale(1); }
+    25%      { transform: rotate(-14deg) scale(1.15); }
+    50%      { transform: rotate(0) scale(1.05); }
+    75%      { transform: rotate(14deg) scale(1.15); }
+}
+
+@keyframes lineGlow {
+    0%, 100% { opacity: .6; }
+    50%      { opacity: 1; }
+}
+
+@keyframes blobMove {
+    from { transform: translate(-15px, -10px) scale(1); }
+    to   { transform: translate(15px, 10px) scale(1.08); }
+}
+
+  
+    </style>
+</head>
+<body>
+    <div class="start">
+        <img src="./bazi.img/218370a8-b0cf-4e81-9ee5-4103ca5ad87a.png" alt="">
+        <button id="start">START GAME<i class="fa-solid fa-gamepad"></i></button>
+    </div>
+        <div class="game">
+    <div class="hed">
+  <h1><i class="fa-solid fa-hand-peace" style="color: #7C3AED;"></i>Rock <span style="color:  #60A5FA">Paper</span><span style="color:#c084fc;">  Scissors</span></h1> 
+  <p>choose your move and beat the computer!</p>
+</div>
+<div class="contaner1">
+    <div class="left-hed">
+        <i class="fa-solid fa-user"></i>
+        <p>You</p>
+        <p id="p1">0</p>
+    </div>
+    <div class="right-hed">
+        <i class="fa-solid fa-robot"></i>
+        <p>Computer</p>
+        <p id="p2">0</p>
+    </div>
+</div>
+
+
+<div class="kool">
+    <h1>YOU WIN<i class="fa-solid fa-trophy"></i></h1>
+    <div class="contaner3">
+   
+    <div class="right">
+           <i class="fa-solid fa-user"></i>
+           <h3>You</h3>
+           <span><i id="icon2" class="fa-solid fa-hand-back-fist"></i></span>
+           <p id="p-2"></p>
+         
+    </div>
+      <div class="left">
+     <i class="fa-solid fa-robot"></i>
+        <h3>Computer</h3>
+        <span><i id="icon1" class="fa-solid fa-hand-scissors fa-rotate-90"></i></span>
+        <p id="p-1"></p>
+    </div>
+    </div>
+     <button id="again">Play Again <i class="fa-solid fa-rotate-right"></i></button>
+</div>
+
+
+
+
+<div class="contaner2">
+    <div class="ro">
+        <button data-eskan="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+        <p>Rock</p>
+    </div>
+    <div class="pa">
+        <button data-eskan="scissors"><i class="fa-solid fa-hand-scissors fa-rotate-90"></i></button>
+        <p>Scissors</p>
+    </div>
+    <div class="sc">
+        <button  data-eskan="paper"><i class="fa-solid fa-hand"></i></button>
+        <p>Paper</p>
+    </div>
+</div>
+</div>
+</body>
+<script>
+     const kool=document.querySelector('.kool')
+    const h=document.querySelector('.kool>h1')
+   const p=document.querySelector('#p-1')
+   const you=document.querySelector('#p-2')
+   const icon1=document.querySelector('#icon1')
+   const icon2=document.querySelector('#icon2')
+   const p1=document.querySelector('#p1')
+    const p2=document.querySelector('#p2')
+const button=document.querySelectorAll('.contaner2 button')
+const again=document.querySelector('#again')
+const start=document.querySelector('#start')
+const str=document.querySelector('.start')
+const game=document.querySelector('.game')
+start.addEventListener('click',()=>{
+str.style.display='none'
+game.style.display='block'
+
+})
+
+
+
+
+
+button.forEach((val)=>{
+    
+    val.addEventListener('click',()=>{
+        let x=val.getAttribute('data-eskan')
+      let choices=['scissors','rock','paper']
+      let top=Math.floor(Math.random()*3)
+      let sum=choices[top]
+console.log(sum);
+if(x===sum){
+    h.style.color='yellow'
+ kool.style.display='block'
+h.innerText='IT S A DRAW ⚖'
+you.innerText=x
+p.innerText=sum
+if(x==='rock'){
+    icon1.className=('fa-solid fa-hand-back-fist')
+icon2.className=('fa-solid fa-hand-back-fist')
+
+}else if(x==='scissors'){
+    icon1.className=('fa-solid fa-hand-scissors fa-rotate-90')
+
+icon2.className=('fa-solid fa-hand-scissors fa-rotate-90')
+}else if(x==='paper'){
+    icon1.className=('fa-solid fa-hand')
+icon2.className=('fa-solid fa-hand')
+
+}
+}else if(x==='rock'&& sum==='scissors'){
+    h.innerText='YOU WIN🏆'
+    p1.innerText++
+ kool.style.display='block'
+you.innerText='rock'
+p.innerText='scissors'
+icon1.className=('fa-solid fa-hand-scissors fa-rotate-90')
+icon2.className=('fa-solid fa-hand-back-fist')
+ h.style.color='aqua'
+
+
+}else if(x==='scissors'&& sum==='paper'){
+    h.style.color='aqua'
+      h.innerText='YOU WIN🏆'
+  kool.style.display='block'  
+   you.innerText='scissors' 
+   p.innerText='paper'
+icon1.className=('fa-solid fa-hand')
+p1.innerText++
+icon2.className=('fa-solid fa-hand-scissors fa-rotate-90')
+}else if(x==='paper'&& sum==='scissors'){
+    h.innerText='YOU LOSE❌'
+    h.style.color='red'
+  kool.style.display='block'
+    p.innerText='scissors'
+    you.innerText='paper'
+    icon1.className=('fa-solid fa-hand-scissors fa-rotate-90')
+  p2.innerText++
+    icon2.className=('fa-solid fa-hand')
+}else if(x==='paper'&& sum==='rock'){
+     h.style.color='aqua'
+      h.innerText='YOU WIN🏆'
+  kool.style.display='block' 
+     you.innerText='paper'
+     p.innerText='rock'
+     icon1.className=('fa-solid fa-hand-back-fist')
+   p1.innerText++
+     icon2.className=('fa-solid fa-hand')
+}else if(x==='rock'&& sum==='paper'){
+    h.innerText='YOU LOSE❌'
+     h.style.color='red'
+  kool.style.display='block'
+  you.innerText='rock'  
+  p.innerText='paper'
+  icon1.className=('fa-solid fa-hand')
+ p2.innerText++
+  icon2.className=('fa-solid fa-hand-back-fist')
+}else if(x==='scissors'&& sum==='rock'){
+    h.innerText='YOU LOSE❌'
+     h.style.color='red'
+  kool.style.display='block' 
+  you.innerText='scissors'
+  p.innerText='rock'
+    icon1.className=('fa-solid fa-hand-back-fist')
+p2.innerText++
+      icon2.className=('fa-solid fa-hand-scissors fa-rotate-90')
+}
+    })
+})
+again.addEventListener('click',()=>{
+    kool.style.display='none'
+})
+
+</script>
+</html>
